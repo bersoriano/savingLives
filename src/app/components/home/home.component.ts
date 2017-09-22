@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   cities: Array<String> = ['Ciudad de Mexico CDMX', 'Puebla', 'Morelos', 'Otros'];
-
+  title: String = 'SELECCIONA UNA CIUDAD';
   constructor() { }
 
   ngOnInit() {
