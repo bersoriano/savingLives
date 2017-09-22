@@ -1,0 +1,11 @@
+.headerComponent {
+    background-color: #19AB97;
+    min-height: 55px;
+    align-items: center;
+    display: flex;
+    span {
+        text-align: center;
+        flex: 1;
+        color: white;
+    }    
+}

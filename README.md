@@ -1,5 +1,41 @@
 # SavingLives
 
+## Home Screen and Categories
+<p align="center">
+<img align="center" src="documentation/Home-Categories.png" width="80%" alt=""/>
+</p>
+
+## People Search Flow
+<p align="center">
+<img align="center" src="documentation/People-Search-Flow.png" width="80%" alt=""/>
+</p>
+
+## Donations flow
+<p align="center">
+<img align="center" src="documentation/Donations-Flow.png" width="80%" alt=""/>
+</p>
+
+## Gathering flow
+<p align="center">
+<img align="center" src="documentation/Gathering-Flow.png" width="80%" alt=""/>
+</p>
+
+## Pet flow
+<p align="center">
+<img align="center" src="documentation/Pets-Rescue-Flow.png" width="80%" alt=""/>
+</p>
+
+## Rescue Leaders Flow
+<p align="center">
+<img align="center" src="documentation/Rescue-Leaders-Flow.png" width="80%" alt=""/>
+</p>
+
+
+
+
+
+# SavingLives
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 
 ## Development server
