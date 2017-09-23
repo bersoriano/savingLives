@@ -1,3 +1,26 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 750px;
+    position: relative;
+    transition: .2s;
+    left: 0;
+    .homeSection, .categoriesSection {
+        min-width: 375px;
+    }
+    &.showCategories {
+        left: -375px;
+        transition: .2s;
+    }
+    &.showMenu {
+        left: 0;
+        transition: .2s;
+    }
+}
+.windowDisplay {
+    max-width: 375px;
+    overflow: hidden;
+}
 .menu {
     .menuList {
         .menuItem {
