@@ -32,7 +32,9 @@
             margin-bottom: 2px;
             padding: 0 30px;
             cursor: pointer;
+            transition: .2s;
             &:hover {
+                transition: .2s;
                 background-color:#dad9d9; 
             }
         }
@@ -45,5 +47,11 @@
         padding: 0 30px;
         display: flex;
         align-items: center;
+        cursor: pointer;
+        transition: .2s;
+        &:hover {
+            transition: .2s;
+            background-color:#dad9d9;
+        }
     }
 }
