@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     'Mascotas perdidas y encontradas'
   ];
   selectedCity: String;
+  selectedCategory: String;
   slideTo: Observable<string>;
   constructor(private store: Store<AppState>) { 
     this.slideTo = store.select('slideTo');
@@ -38,6 +39,39 @@ export class HomeComponent implements OnInit {
     this.selectedCity = city;
     console.log("Ciudad seleccionada: "+city);
   }
+
+  selectCategory = function (category) {
+    debugger;
+    switch (category) {
+      case "Solicitar ayuda y emergencias":
+        this.selectedCategory = " - Ayuda";
+        this.helpButtonTitle = "AYUDA"
+        break;
+      case "Buscar personas":
+        this.selectedCategory = "- Personas";
+        break;
+      case "Donaciones y apoyo":
+        this.selectedCategory = "- Donaciones";
+        break;
+      case "Información falsa":
+        this.selectedCategory = "- Info Falsa";
+        break;
+      case "Centro de acopio y albergues":
+        this.selectedCategory = "- Acopio";
+        break;
+      case "Mascotas perdidas y encontradas":
+        this.selectedCategory = "- Mascotas";
+        break;
+      default:
+        this.selectedCategory = "";
+    }
+    console.log("Selected category: "+category);
+  }
+
+  /* Help component */
+  helpButtonTitle: String;
+  helpTitle: String = "LISTA DE EMERGENCIAS";
+
 
   ngOnInit() {
   }

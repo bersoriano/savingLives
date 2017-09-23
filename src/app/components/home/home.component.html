@@ -1,30 +1,42 @@
 <div class="windowDisplay">
   <div class="homeContainer" [ngClass]="this.slideTo | async">
       <!-- Screen 1 -->
-      <div class="homeSection">
-          <app-header></app-header>
-          <!-- Home Section -->
-          <app-section-title [titleName]="title"></app-section-title>
-          <!-- Menu and categories container -->
-          <!-- Select city -->
-          <div class="menu">
+        <div class="homeSection">
+            <app-header></app-header>
+            <!-- Home Section -->
+            <app-section-title [titleName]="title"></app-section-title>
+            <!-- Menu and categories container -->
+            <!-- Select city -->
+            <div class="menu">
               <ul class="menuList">
                 <li class="menuItem" 
                   *ngFor="let city of cities" 
-                  (click)="selectCity(city)">{{city}}</li>
+                  (click)="selectCity(city)">{{city}}
+                </li>
               </ul>
             </div>
         </div>
-        <!-- Screen 2 -->
-        <div class="categoriesSection">
-          <!-- Header Navigation -->
-          <app-header-nav [headerName]="selectedCity"></app-header-nav>
-          <!-- Categories -->
-          <app-section-title [titleName]="categoriesTitle"></app-section-title>
-          <!-- Categories list -->
-          <ul class="categoriesList">
-            <li class="categoryElement" *ngFor="let category of categories">{{category}}</li>
-          </ul>
-        </div>    
-</div>  
+      <!-- Screen 2 -->
+      <div class="categoriesSection">
+        <!-- Header Navigation -->
+        <app-header-nav 
+          [headerName]="selectedCity" 
+          [headerCategory]="selectedCategory">
+        </app-header-nav>
+        <!-- Categories -->
+        <app-section-title [titleName]="categoriesTitle"></app-section-title>
+        <!-- Categories list -->
+        <ul class="categoriesList">
+          <li class="categoryElement"
+            (click)="selectCategory(category)" 
+            *ngFor="let category of categories">{{category}}
+          </li>
+        </ul>
+        <!-- Screen 3 -->
+        <div class="selectedCat">
+          <app-button-toolbar [buttonName]="helpButtonTitle"></app-button-toolbar>
+        </div>
+        <app-section-title [titleName]="helpTitle"></app-section-title>                
+      </div>
+  </div>  
 </div>

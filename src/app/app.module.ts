@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { SectionTitleComponent } from './components/common/styled-components/section-title/section-title.component';
 import { HeaderNavComponent } from './components/common/styled-components/header-nav/header-nav.component';
+import { ButtonToolbarComponent } from './components/common/styled-components/button-toolbar/button-toolbar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeaderNavComponent } from './components/common/styled-components/header
     HeaderComponent,
     HomeComponent,
     SectionTitleComponent,
-    HeaderNavComponent
+    HeaderNavComponent,
+    ButtonToolbarComponent
   ],
   imports: [
     BrowserModule,
