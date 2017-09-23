@@ -3,9 +3,13 @@
 <!-- Select city -->
 <div class="menu">
   <ul class="menuList">
-    <li class="menuItem" *ngFor="let city of cities">{{city}}</li>
+    <li class="menuItem" 
+      *ngFor="let city of cities" 
+      (click)="selectCity(city)">{{city}}</li>
   </ul>
 </div>
+<!-- Header Navigation -->
+<app-header-nav [headerName]="selectedCity"></app-header-nav>
 <!-- Categories -->
 <app-section-title [titleName]="categoriesTitle"></app-section-title>
 <!-- Categories list -->

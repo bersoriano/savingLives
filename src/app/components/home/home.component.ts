@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  cities: Array<String> = ['Ciudad de Mexico CDMX', 'Puebla', 'Morelos', 'Otros'];
+  cities: Array<String> = ['CDMX', 'Puebla', 'Morelos', 'Otros'];
   title: String = 'SELECCIONA UNA CIUDAD';
   categoriesTitle: String = 'CATEGORIAS';
   categories: Array<String> = [
@@ -18,8 +18,12 @@ export class HomeComponent implements OnInit {
     'Centro de acopio y albergues',
     'Mascotas perdidas y encontradas'
   ];
+  selectedCity: String;
   constructor() { }
-
+  selectCity = function (city) {
+    debugger;
+    this.selectedCity = city;
+  }
   ngOnInit() {
   }
 

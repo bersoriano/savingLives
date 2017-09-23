@@ -8,6 +8,10 @@
             background-color: #F2F2F2;
             margin-bottom: 2px;
             padding: 0 30px;
+            cursor: pointer;
+            &:hover {
+                background-color:#dad9d9; 
+            }
         }
     }
 }
