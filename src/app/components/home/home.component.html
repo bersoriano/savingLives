@@ -1,6 +1,14 @@
+<!-- Home Section -->
 <app-section-title [titleName]="title"></app-section-title>
+<!-- Select city -->
 <div class="menu">
   <ul class="menuList">
     <li class="menuItem" *ngFor="let city of cities">{{city}}</li>
   </ul>
 </div>
+<!-- Categories -->
+<app-section-title [titleName]="categoriesTitle"></app-section-title>
+<!-- Categories list -->
+<ul class="categoriesList">
+  <li class="categoryElement" *ngFor="let category of categories">{{category}}</li>
+</ul>
