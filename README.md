@@ -1,5 +1,17 @@
 # Fuerza Mexico
 
+Estamos desarrollando una aplicación móvil, para organizar la ayuda necesaria para reconstruir las regiones afectadas después del terremoto del 19 de Septiembre en CDMX, Puebla, Morelos y otros municipios.
+
+El enfoque de la primera versión se desarrollará al rededor de:
+- Personas
+- Animales
+- Edificios
+- Centros de acopio
+
+Principales problemas, que estamos enfrentando:
+- Validación sobre la veracidad de la información.
+
+
 ## Home Screen and Categories
 <p align="center">
 <img align="center" src="documentation/Home-Categories.png" width="80%" alt=""/>

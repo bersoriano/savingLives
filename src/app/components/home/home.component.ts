@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
-import { SHOW_MENU, SHOW_CATEGORIES } from '../../core/actions/slideMenu';
+import { SHOW_MENU, SHOW_CATEGORIES, CATEGORY_HELP } from '../../core/actions/slideMenu';
 
 interface AppState {
   slideTo: string;
@@ -46,6 +46,7 @@ export class HomeComponent implements OnInit {
       case "Solicitar ayuda y emergencias":
         this.selectedCategory = " - Ayuda";
         this.helpButtonTitle = "AYUDA"
+        this.store.dispatch({ type: CATEGORY_HELP });
         break;
       case "Buscar personas":
         this.selectedCategory = "- Personas";
@@ -67,11 +68,6 @@ export class HomeComponent implements OnInit {
     }
     console.log("Selected category: "+category);
   }
-
-  /* Help component */
-  helpButtonTitle: String;
-  helpTitle: String = "LISTA DE EMERGENCIAS";
-
 
   ngOnInit() {
   }

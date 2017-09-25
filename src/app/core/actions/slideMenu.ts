@@ -2,3 +2,9 @@ import { Action } from '@ngrx/store';
 
 export const SHOW_MENU = 'SHOW_MENU';
 export const SHOW_CATEGORIES = 'SHOW_CATEGORIESS';
+
+export const CATEGORY_HELP = 'CATEGORY_HELP';
+export const CATEGORY_SEARCHPPL = 'CATEGORY_SEARCHPPL';
+export const CATEGORY_DONATIONS = 'CATEGORY_DONATIONS';
+export const CATEGORY_GATHERING = "CATEGORY_GATHERING";
+export const CATEGORY_PETS = 'CATEGORY_PETS';

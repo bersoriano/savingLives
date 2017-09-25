@@ -5,16 +5,29 @@
     position: relative;
     transition: .2s;
     left: 0;
-    .homeSection, .categoriesSection {
+    .homeSection, .categoriesSection, .categoryContainer, .categoryDetail {
         min-width: 375px;
     }
-    &.showCategories {
+    &.showCategories,&.categoryDetail {
         left: -375px;
         transition: .2s;
+    }
+    &.categoryDetail {
+        .categorySlider {
+            left: -375px;
+        }
     }
     &.showMenu {
         left: 0;
         transition: .2s;
+    }
+    .categorySlider {
+        display: flex;
+        flex-direction: row;
+        min-width: 750px;
+        position: relative;
+        left: 0px;
+        transition: .2s;        
     }
 }
 .windowDisplay {

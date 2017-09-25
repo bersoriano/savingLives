@@ -11,6 +11,8 @@ import { HomeComponent } from './components/home/home.component';
 import { SectionTitleComponent } from './components/common/styled-components/section-title/section-title.component';
 import { HeaderNavComponent } from './components/common/styled-components/header-nav/header-nav.component';
 import { ButtonToolbarComponent } from './components/common/styled-components/button-toolbar/button-toolbar.component';
+import { CollapsibleListComponent } from './components/common/styled-components/collapsible-list/collapsible-list.component';
+import { HelpComponent } from './components/help/help.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ButtonToolbarComponent } from './components/common/styled-components/bu
     HomeComponent,
     SectionTitleComponent,
     HeaderNavComponent,
-    ButtonToolbarComponent
+    ButtonToolbarComponent,
+    CollapsibleListComponent,
+    HelpComponent
   ],
   imports: [
     BrowserModule,

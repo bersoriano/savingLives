@@ -27,6 +27,7 @@ export class HeaderNavComponent implements OnInit {
 
   selectMenu = function () {
     debugger;
+    console.log("Current state: "+this.slideTo);
     this.store.dispatch({ type: SHOW_MENU });
   }
 
