@@ -10,7 +10,7 @@ export class HelpComponent implements OnInit {
   constructor() { }
   /* Help component */
   helpButtonTitle: String;
-  helpTitle: String = "LISTA DE EMERGENCIAS";
+  helpTitle: String = "EMERGENCIAS Y AYUDA REQUERIDA";
 
   helptitleOne = "Edificio colapsado en Roma";
   collapsibleDesOne = "Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum";

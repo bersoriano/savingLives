@@ -29,6 +29,7 @@ export class HeaderNavComponent implements OnInit {
     debugger;
     console.log("Current state: "+this.slideTo);
     this.store.dispatch({ type: SHOW_MENU });
+    this.headerCategory = "";
   }
 
 }

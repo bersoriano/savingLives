@@ -1,37 +1,49 @@
 .homeContainer {
     display: flex;
     flex-direction: row;
-    width: 750px;
+    width: 640px;
     position: relative;
     transition: .2s;
     left: 0;
     .homeSection, .categoriesSection, .categoryContainer, .categoryDetail {
-        min-width: 375px;
+        min-width: 320px;
     }
     &.showCategories,&.categoryDetail {
-        left: -375px;
+        left: -320px;
         transition: .2s;
     }
     &.categoryDetail {
         .categorySlider {
-            left: -375px;
+            left: -320px;
         }
+        app-button-toolbar {
+            transition: .2s;
+            opacity: 1;
+            display: block;
+        }        
     }
     &.showMenu {
         left: 0;
         transition: .2s;
     }
+    &.showCategories {
+        app-button-toolbar {
+            transition: .2s;
+            opacity: 0;            
+            display: none;
+        }
+    }
     .categorySlider {
         display: flex;
         flex-direction: row;
-        min-width: 750px;
+        min-width: 640px;
         position: relative;
         left: 0px;
         transition: .2s;        
     }
 }
 .windowDisplay {
-    max-width: 375px;
+    max-width: 320px;
     overflow: hidden;
 }
 .menu {
